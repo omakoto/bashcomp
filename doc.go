@@ -2,6 +2,7 @@
 Package bashcomp generates a bash completion source file for a command executable.
 
 Example: (this file is in sample1/.)
+
     package main
 
     import (
@@ -27,7 +28,7 @@ Then,
 
     $ testcmd1 -[TAB][TAB]
 
-will shows
+will show
 
     -foo  -test
 

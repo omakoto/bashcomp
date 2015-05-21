@@ -11,5 +11,5 @@ var (
 )
 
 func main() {
-	bashcomp.HandleBashCompletionWithOptions(false, "aaa", "aab", "abc", "bbb")
+	bashcomp.HandleBashCompletionNoFiles("aaa", "aab", "abc", "bbb")
 }
