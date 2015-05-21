@@ -69,7 +69,7 @@ func handleBashCompletionWithOptions(allowFiles bool, rawArgs ...string) {
 var source = `
 # Bash autocomplete script for the {{.Command}} command.
 # Source it with the following command:
-# . <({{.Command}} bash-completion)
+# . <({{.Command}} -bash-completion)
 _{{ .Command }}_complete() {
   local cur="${COMP_WORDS[COMP_CWORD]}"
 
