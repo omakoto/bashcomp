@@ -23,10 +23,16 @@ type values struct {
 	RawArgs    string
 }
 
+// Generate bash completion source file from command line flags for a command.
+// This is for commands that accept file names as arguments.
 func HandleBashCompletion() {
 	HandleBashCompletionWithOptions(true)
 }
 
+// Generate bash completion source file from command line flags for a command.
+//
+// If a command doesn't accept file names as arguments, pass false to allowFiles.
+// If a commands accept arguments that do not begin with -, pass them to  rawArgs.
 func HandleBashCompletionWithOptions(allowFiles bool, rawArgs ...string) {
 	if !flag.Parsed() {
 		flag.Parse()

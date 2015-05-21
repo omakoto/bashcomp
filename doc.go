@@ -1,5 +1,4 @@
-# bashcomp
-
+/*
 Package bashcomp generates a bash completion source file for a command executable.
 
 Example: (this file is in sample1/.)
@@ -31,3 +30,6 @@ Then,
 will shows
 
     -foo  -test
+
+*/
+package bashcomp
