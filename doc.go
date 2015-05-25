@@ -28,7 +28,7 @@ Then,
 
     $ testcmd1 -[TAB][TAB]
 
-will show
+will show:
 
     -foo  -test
 
