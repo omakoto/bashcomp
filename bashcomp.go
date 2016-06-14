@@ -79,7 +79,6 @@ _{{ .Command }}_complete() {
       cand="{{.Flags}}"
       ;;
   esac
-  cand=$cand
   if [ "x$cand" = "x" ] ; then
     COMPREPLY=(
         {{if.AllowFiles}}
