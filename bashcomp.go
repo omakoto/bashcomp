@@ -75,6 +75,9 @@ _{{ .Command }}_complete() {
 
   local cand=""
   case "$cur" in
+    "")
+      {{ .Command }} -h >/dev/tty
+      ;;
     -*)
       cand="{{.Flags}}"
       ;;
