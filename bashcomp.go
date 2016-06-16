@@ -73,10 +73,13 @@ var source = `
 _{{ .Command }}_complete() {
   local cur="${COMP_WORDS[COMP_CWORD]}"
 
+  COMPREPLY=()
+
   local cand=""
   case "$cur" in
     "")
       {{ .Command }} -h >/dev/tty
+      return 0
       ;;
     -*)
       cand="{{.Flags}}"
